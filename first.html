@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techno IT Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d1b2a;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo h1 {
+    color: #5a8dde;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffffff;
+    background-color: #5a8dde;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #5a8dde;
+}
+
+.get-quote-btn {
+    background-color: #297efc;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.get-quote-btn:hover {
+    background-color: #1d63b3;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+    background-image: url('background-pattern.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 27, 42, 0.9);
+    z-index: -1;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content h2 span {
+    color: #297efc;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #b0bec5;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cta {
+    padding: 10px 20px;
+    background-color: #297efc;
+    border: none;
+    color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta:hover {
+    background-color: #1d63b3;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #297efc;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>techno <span>IT</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+                <button class="get-quote-btn">Get Quotes</button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>Delivering Superior Services<br><span>IT Solutions.</span></h2>
+                <p>You can easily change any design to your own. It is also highly customizable SEO friendly template.</p>
+                <div class="cta-buttons">
+                    <button class="cta get-quote-btn">Get Quotes</button>
+                    <button class="cta get-started-btn">Get Started</button>
+                </div>
+                <div class="social-icons">
+                    <a href="#">&#xf099;</a>
+                    <a href="#">&#xf09a;</a>
+                    <a href="#">&#xf0e1;</a>
+                    <a href="#">&#xf16d;</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="ai-head.png" alt="AI Head Illustration">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
